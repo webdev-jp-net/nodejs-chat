@@ -1,0 +1,92 @@
+* {
+	font-family: sans-serif;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* */
+.balloon {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 48px;
+	padding: 6px 12px;
+	font-size: 18px;
+	background: #000;
+}
+.balloon::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -12px;
+	z-index: 0;
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 12px solid #000;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+}
+.balloon::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+	.balloon input {
+		-webkit-appearance: none;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 0.5em;
+	font-size: 18px;
+		color: #fff;
+		background: transparent;
+		border: 0;
+		border-bottom: 1px solid #666;
+		border-radius: 0;
+	}
+	.balloon input:focus {
+		background: #333;
+	}
+	#name {
+		float: left;
+		width: 18%;
+	}
+	#text {
+		float: right;
+		width: 80%;
+	}
+
+/* */
+#log {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 78px 0 0;
+	background: #eee;
+}
+	#log th,
+	#log td {
+		padding: 12px 24px;
+		background: #fff;
+		border-bottom: 1px solid #000;
+		font-size: 16px;
+		line-height: 18px;
+		vertical-align: top;
+	}
+	#log th {
+		width: 20%;
+		text-align: left;
+	}
+	#log td:last-child {
+		width: 20%;
+		color: #999;
+		white-space: nowrap;
+	}
+	#log tr.myself th,
+	#log tr.myself td {
+		color: #06f;
+	}

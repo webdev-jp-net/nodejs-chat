@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript" ></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/javascripts/chat.js"></script>
+</head>
+<body>
+	<div class="balloon">
+		<input type="text" val="" id="name" placeholder="NAME:">
+		<input type="text" val="" id="text" placeholder="MESSAGE:">
+	</div>
+	<table id="log"></table>
+</body>
+</html>
